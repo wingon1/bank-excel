@@ -5,6 +5,18 @@ public enum Bank {
     IBK("기업은행", "003"),
     ;
 
+    private final String description;
+    private final String code;
     Bank(String description, String code){
+        this.description = description;
+        this.code = code;
+    }
+
+    public String getDescription(){
+        return this.description;
+    }
+
+    String getCode(){
+        return this.code;
     }
 }
